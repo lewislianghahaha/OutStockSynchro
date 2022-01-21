@@ -30,7 +30,7 @@
         public string Get_SearchK3ViewRecord(string orderno)
         {
             _result = $@"
-                            SELECT * FROM dbo.View_OUTSTOCKPda A WHERE doc_no in ('{orderno}')
+                            SELECT * FROM dbo.View_OUTSTOCKPda A WHERE doc_no in ({orderno})
                         ";
 
             return _result;
@@ -44,7 +44,7 @@
         public string Get_SearchBarRecord(string orderno)
         {
             _result = $@"
-                            SELECT * FROM T_K3SalesOut WHERE doc_no in ('{orderno}')
+                            SELECT * FROM T_K3SalesOut WHERE doc_no in ({orderno})
                         ";
             return _result;
         }
