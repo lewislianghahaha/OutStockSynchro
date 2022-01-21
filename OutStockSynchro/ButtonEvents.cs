@@ -52,7 +52,7 @@ namespace OutStockSynchro
 
                     //根据所获取的单据号进行数据同步
                     var result = generate.Synchro(flistid);
-                    mesage = result == "Finish" ? "所选择的单据与条码系统数据同步成功" : $"出库数据与条码系统交互操作异常,原因:'{result}'";
+                    mesage = result == "Finish" ? "所选择的单据与条码系统数据同步成功" : $"出库数据与条码系统数据同步操作异常,原因:'{result}'";
                     View.ShowMessage(mesage);
                 }
             }
