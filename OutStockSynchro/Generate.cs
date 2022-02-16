@@ -181,19 +181,19 @@ namespace OutStockSynchro
             foreach (DataRow rows in k3MaterialViewDt.Rows)
             {
                 var newrow = inserttemp.NewRow();
-                newrow[0] = rows[0];   //sku_no
-                newrow[1] = rows[1];   //sku_desc
-                newrow[2] = rows[2];   //sku_desc_en
-                newrow[3] = rows[3];   //baseunit_desc
-                newrow[4] = rows[4];   //stockunit_desc
-                newrow[5] = rows[5];   //pack_spec
-                newrow[6] = rows[6];   //pack_gz
-                newrow[7] = rows[7];   //pack_xz
-                newrow[8] = rows[8];   //label_number
-                newrow[9] = rows[9];   //label_name
-                newrow[10] = rows[10]; //sku_catalog
-                newrow[11] = rows[11]; //pack_jz
-                newrow[12] = rows[12]; //化学品分类
+                newrow[0] = rows[0];                    //sku_no
+                newrow[1] = rows[1];                    //sku_desc
+                newrow[2] = rows[2];                    //sku_desc_en
+                newrow[3] = rows[3];                    //baseunit_desc
+                newrow[4] = rows[4];                    //stockunit_desc
+                newrow[5] = rows[5];                    //pack_spec
+                newrow[6] = rows[6];                    //pack_gz
+                newrow[7] = rows[7];                    //pack_xz
+                newrow[8] = rows[8];                    //label_number
+                newrow[9] = rows[9];                    //label_name
+                newrow[10] = rows[10];                  //sku_catalog
+                newrow[11] = rows[11];                  //pack_jz
+                newrow[12] = rows[12];                  //化学品分类
                 newrow[13] = rows[13];                   //配比
                 newrow[14] = rows[14];                   //保质期
                 newrow[15] = rows[15];                   //主要成份
@@ -219,27 +219,27 @@ namespace OutStockSynchro
             foreach (DataRow rows in k3MaterialViewDt.Rows)
             {
                 var newrow = uptemp.NewRow();
-                newrow[0] = rows[0];   //sku_no
-                newrow[1] = rows[1];   //sku_desc
-                newrow[2] = rows[2];   //sku_desc_en
-                newrow[3] = rows[3];   //baseunit_desc
-                newrow[4] = rows[4];   //stockunit_desc
-                newrow[5] = rows[5];   //pack_spec
-                newrow[6] = rows[6];   //pack_gz
-                newrow[7] = rows[7];   //pack_xz
-                newrow[8] = rows[8];   //label_number
-                newrow[9] = rows[9];   //label_name
-                newrow[10] = rows[10]; //sku_catalog
-                newrow[11] = rows[11]; //pack_jz
-                newrow[12] = rows[12]; //化学品分类
-                newrow[13] = rows[13]; //配比
-                newrow[14] = rows[14]; //保质期
-                newrow[15] = rows[15]; //主要成份
-                newrow[16] = rows[16]; //储存温度
-                newrow[17] = rows[17]; //毛重
-                newrow[18] = rows[18]; //项目名称
-                newrow[19] = rows[19]; //客户端物料编号
-                newrow[20] = rows[20]; //配比标题
+                newrow[0] = rows[0];                     //sku_no
+                newrow[1] = rows[1];                     //sku_desc
+                newrow[2] = rows[2];                     //sku_desc_en
+                newrow[3] = rows[3];                     //baseunit_desc
+                newrow[4] = rows[4];                     //stockunit_desc
+                newrow[5] = rows[5];                     //pack_spec
+                newrow[6] = rows[6];                     //pack_gz
+                newrow[7] = rows[7];                     //pack_xz
+                newrow[8] = rows[8];                     //label_number
+                newrow[9] = rows[9];                     //label_name
+                newrow[10] = rows[10];                   //sku_catalog
+                newrow[11] = rows[11];                   //pack_jz
+                newrow[12] = rows[12];                   //化学品分类
+                newrow[13] = rows[13];                   //配比
+                newrow[14] = rows[14];                   //保质期
+                newrow[15] = rows[15];                   //主要成份
+                newrow[16] = rows[16];                   //储存温度
+                newrow[17] = rows[17];                   //毛重
+                newrow[18] = rows[18];                   //项目名称
+                newrow[19] = rows[19];                   //客户端物料编号
+                newrow[20] = rows[20];                   //配比标题
                 newrow[22] = DateTime.Now.ToLocalTime(); //Flastop_time
                 uptemp.Rows.Add(newrow);
             }
